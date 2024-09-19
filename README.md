@@ -165,12 +165,12 @@ npm run dev
 
 ```
 
-A página principal da API estará disponível no navegador no endereço http://localhost:3333.
+A página principal da API estará disponível no navegador no endereço http://localhost:5173.
 
 ### 6. Testar a API com o Postman
 
 1. Baixe e instale o Postman.
-2. Importe as coleções de requisições para testar os endpoints da API. Para isso, você pode usar a URL da API local (normalmente `http://localhost:3000`) e configurar as rotas disponíveis como **GET**, **POST**, **PUT**, e **DELETE**.
+2. Importe as coleções de requisições para testar os endpoints da API. Para isso, você pode usar a URL da API local (normalmente `http://localhost:3333`) e configurar as rotas disponíveis como **GET**, **POST**, **PUT**, e **DELETE**.
 3. Faça os testes de acordo com os endpoints definidos no seu servidor Fastify.
 
 ## Dependências
