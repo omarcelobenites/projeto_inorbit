@@ -1,5 +1,10 @@
 # in.orbit - Backend
 
+![Captura de tela 2024-09-18 233805](https://github.com/user-attachments/assets/79da9527-ea72-4916-9ee3-9b494d3a6243)
+![Captura de tela 2024-09-18 233824](https://github.com/user-attachments/assets/6cbdd277-c6a8-4ec7-9c6d-4cbbc95fdb91)
+
+
+
 Este repositório contém a parte **backend** da aplicação **in.orbit**, construída com **Node.js** e utilizando **Docker** para o banco de dados. **Postman** é utilizado para testar as requisições da API, enquanto **Drizzle Studio** facilita o gerenciamento visual do banco de dados.
 
 ## Tecnologias Utilizadas
