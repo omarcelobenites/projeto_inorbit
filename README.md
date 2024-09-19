@@ -1,3 +1,5 @@
+# 
+
 # in.orbit - Backend
 
 Este repositório contém a parte **backend** da aplicação **in.orbit**, construída com **Node.js** e utilizando **Docker** para o banco de dados. **Postman** é utilizado para testar as requisições da API, enquanto **Drizzle Studio** facilita o gerenciamento visual do banco de dados.
@@ -152,9 +154,9 @@ docker-compose up -d
 
 ```
 
-### 5. Executar o Servidor
+### 5. Executar o Servidor e Acessar a Página Principal
 
-Para rodar o servidor de desenvolvimento:
+Para rodar o servidor de desenvolvimento e abrir a página principal:
 
 ```bash
 bash
@@ -162,6 +164,8 @@ Copiar código
 npm run dev
 
 ```
+
+A página principal da API estará disponível no navegador no endereço http://localhost:3333.
 
 ### 6. Testar a API com o Postman
 
@@ -209,4 +213,4 @@ Este projeto está licenciado sob a Licença MIT.
 
 ---
 
-Este README agora inclui os comandos de instalação para todas as dependências, o processo de instalação do Docker e o uso do **Postman** para testes da API.
+Com isso, o projeto backend está completo, incluindo a execução do comando `npm run dev` para iniciar o servidor e acessar a página principal.
