@@ -1,5 +1,3 @@
-# 
-
 # in.orbit - Backend
 
 Este repositório contém a parte **backend** da aplicação **in.orbit**, construída com **Node.js** e utilizando **Docker** para o banco de dados. **Postman** é utilizado para testar as requisições da API, enquanto **Drizzle Studio** facilita o gerenciamento visual do banco de dados.
@@ -143,9 +141,28 @@ Com o **Ubuntu WSL** instalado, você pode agora instalar o **Docker**:
     ```
     
 
-### 4. Iniciar o Docker
+### 4. Configurar o Banco de Dados com Docker
 
-Para iniciar o banco de dados via Docker, execute o comando:
+No arquivo `docker-compose.yml`, já incluímos a configuração do banco de dados PostgreSQL. Aqui está o conteúdo do arquivo:
+
+```yaml
+yaml
+Copiar código
+name: pocket-js-server
+
+services:
+  pg:
+    image: bitnami/postgresql:13.16.0
+    ports:
+      - '5433:5432'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=inorbit
+
+```
+
+Execute o comando abaixo para subir o serviço do banco de dados com Docker:
 
 ```bash
 bash
@@ -153,6 +170,8 @@ Copiar código
 docker-compose up -d
 
 ```
+
+Isso criará um container com a imagem **PostgreSQL** rodando na porta **5433** e um banco de dados com as credenciais definidas.
 
 ### 5. Executar o Servidor e Acessar a Página Principal
 
@@ -165,12 +184,12 @@ npm run dev
 
 ```
 
-A página principal da API estará disponível no navegador no endereço http://localhost:5173.
+A página principal da API estará disponível no navegador no endereço http://localhost:3000.
 
 ### 6. Testar a API com o Postman
 
 1. Baixe e instale o Postman.
-2. Importe as coleções de requisições para testar os endpoints da API. Para isso, você pode usar a URL da API local (normalmente `http://localhost:3333`) e configurar as rotas disponíveis como **GET**, **POST**, **PUT**, e **DELETE**.
+2. Importe as coleções de requisições para testar os endpoints da API. Para isso, você pode usar a URL da API local (normalmente `http://localhost:3000`) e configurar as rotas disponíveis como **GET**, **POST**, **PUT**, e **DELETE**.
 3. Faça os testes de acordo com os endpoints definidos no seu servidor Fastify.
 
 ## Dependências
@@ -213,4 +232,4 @@ Este projeto está licenciado sob a Licença MIT.
 
 ---
 
-Com isso, o projeto backend está completo, incluindo a execução do comando `npm run dev` para iniciar o servidor e acessar a página principal.
+Com isso, o projeto backend está completo, incluindo a execução do comando `npm run dev` para iniciar o servidor e acessar a página principal, juntamente com a configuração do banco de dados via `docker-compose.yml`.
