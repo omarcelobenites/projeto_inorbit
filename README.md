@@ -1,7 +1,6 @@
 # in.orbit - Backend
 
-![Captura de tela 2024-09-18 233805](https://github.com/user-attachments/assets/79da9527-ea72-4916-9ee3-9b494d3a6243)
-![Captura de tela 2024-09-18 233824](https://github.com/user-attachments/assets/6cbdd277-c6a8-4ec7-9c6d-4cbbc95fdb91)
+![2024-09-20 14-41-09](https://github.com/user-attachments/assets/cd5e3dc5-822b-42e0-9884-9fbb2f9ce436)
 
 
 
